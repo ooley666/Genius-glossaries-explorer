@@ -1,0 +1,174 @@
+body {
+  background-color: #d05353;
+  font-family: "Ubuntu", sans-serif;
+  position: relative;
+}
+#root {
+  padding-bottom: 10px;
+  min-height: 999px;
+}
+button {
+  background-color: #a52422;
+  color: #f8dda4;
+  text-decoration: none;
+  font-family: "Inconsolata", monospace;
+  font-size: 15px;
+  font-weight: 600;
+  font-style: normal;
+  text-decoration: none;
+  padding: 8px 7px;
+  border: 4px solid #232323;
+  border-radius: 8px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+button:hover {
+  background-color: #9d2220;
+  cursor: pointer;
+}
+button:active {
+  transform: scale(0.95);
+}
+button:disabled {
+  cursor: default;
+  transform: none;
+}
+
+.selection-panel {
+  cursor: default;
+}
+.welcome-heading {
+  text-align: center;
+  text-transform: uppercase;
+}
+.popup-box {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  /* width: 480px; */
+  border-radius: 15px;
+  background: #f8dda4;
+  box-shadow: 0px 0px 0px 9999px rgba(0, 0, 0, 0.7);
+  border: 11px solid #9d2220;
+  font-size: 0.8em;
+  text-align: center;
+}
+.popup-instructions {
+  display: flex;
+  flex-direction: column;
+}
+.popup-instructions > div {
+  display: flex;
+  text-align: center;
+}
+.popup-text {
+  max-width: 400px;
+}
+.popup-box span {
+  font-style: italic;
+  font-weight: 700;
+}
+.popup-link,
+footer a {
+  text-decoration: none;
+  font-style: italic;
+  font-weight: 700;
+  color: #232323;
+  text-shadow: 0 0 5px #ffa20df2, 0 0 10px #ffa20df2, 0 0 15px #ffa20df2,
+    0 0 20px #ffa20df2, 0 0 30px #ffa20df2, 0 0 40px #ffa20df2,
+    0 0 55px #ffa20df2, 0 0 75px #ffa20df2;
+}
+.popup-link:hover,
+footer a:hover {
+  text-shadow: 0 0 5px #e57c0bf2, 0 0 10px #e57c0bf2, 0 0 15px #e57c0bf2,
+    0 0 20px #e57c0bf2, 0 0 30px #e57c0bf2, 0 0 40px #e57c0bf2,
+    0 0 55px #e57c0bf2, 0 0 75px #e57c0bf2;
+}
+.popup-img {
+  max-width: 400px;
+  margin: 5px;
+}
+.popup-close {
+  display: block;
+  margin: auto;
+}
+.thumbnails-container {
+  display: flex;
+  min-height: 900px;
+}
+.litThumbnails,
+.sportsThumbnails {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.thumbnail {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  background-color: #f8dda4;
+  text-align: center;
+  font-size: 15px;
+  border-radius: 15px;
+  width: 700px;
+}
+.thumb-link {
+  text-decoration: none;
+  color: #232323;
+  margin: 20px;
+}
+.thumb-link:hover {
+  color: #3b3a3a;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  max-height: 100px;
+}
+
+.rna-page {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.rna-page_header {
+  margin: auto;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+.rna-container {
+  margin-bottom: 50px;
+}
+.rna-page_item {
+  background-color: #f8dda4;
+  margin: 1rem 0 0 0;
+  display: flex;
+  justify-content: space-between;
+}
+.rna-page a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.referent {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  font-weight: 700;
+  font-size: 2rem;
+}
+.annotation {
+  font-weight: 300;
+  font-style: italic;
+  width: 70%;
+  font-size: 1.5rem;
+}
