@@ -15,7 +15,7 @@ const SongThumbnail = ({ songID, showPopup, isDisabled }) => {
   return (
     <div className="thumbnail">
       {" "}
-      <h1>{title}</h1>
+      <p>{title}</p>
       <Link
         className="thumb-link"
         to={`/${id}?annCount=${accepted_annotations}`}

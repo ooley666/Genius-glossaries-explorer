@@ -1,7 +1,7 @@
 const API_KEY = `tVXKWbisqenCK0yvienxwRRtfrxj2psZbU3_TcaZHUAVtieW3db1lC5_m92gLsUR`;
 export const API_AUTH = `access_token=${API_KEY}`;
 export const API = `https://api.genius.com`;
-export const PER_PAGE = 5;
+export const PER_PAGE = 6;
 export const litGlossariesIDs = [
   `485521`, //idioms
   `424605`, //rhetorical terms

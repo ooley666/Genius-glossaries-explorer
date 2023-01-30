@@ -19,19 +19,23 @@ export function QzPopup({ popupIsVisible, closePopup }) {
               Quizlet import page
             </a>
           </p>
-          <p className="popup-text">
-            Paste the data into the box and apply the following settings: <br />
-            <br /> use "---" as a term/definition divider <br />
-            <br /> use "|||" as a line divider
-          </p>
         </div>
-
         <div>
           <img
             className="popup-img"
             src={quizletStudySet}
             alt={` use \"---\" as a term/definition divider;  \"|||\" as a line divider`}
           />
+        </div>
+
+        <div>
+          <p className="popup-text">
+            Paste the data into the box and apply the following settings: <br />
+            <br /> use "---" as a term/definition divider <br />
+            <br /> use "|||" as a line divider
+          </p>
+        </div>
+        <div>
           <img
             className="popup-img"
             src={quizletSettings}

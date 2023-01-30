@@ -24,10 +24,10 @@ const RNApage = () => {
               : "",
           }}
         >
-          {isFetching ? `Loading...` : `Give me different idioms`}
+          {isFetching ? `Loading...` : `Give me different words`}
         </button>
       </div>
-      <div className="rna-container">
+      <div className="container rna-container">
         {error ? (
           <h2>{error.message}</h2>
         ) : isLoading ? (

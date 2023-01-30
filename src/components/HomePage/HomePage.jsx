@@ -11,16 +11,16 @@ const HomePage = () => {
         closePopup={() => setPopupVisibility(false)}
       />
       <div className="welcome-heading">
-        <h1>
+        <p>
           Welcome! With the help of this app you can explore <br /> a variety of
           glossaries available below.{" "}
-        </h1>
-        <h2>
+        </p>
+        <p>
           Or you can make up a Quizlet study set by pressing the corresponding
           button{" "}
-        </h2>
+        </p>
       </div>
-      <div className="thumbnails-container">
+      <div className="container">
         <div className="litThumbnails">
           {litGlossariesIDs.map((id, i) => {
             return (
