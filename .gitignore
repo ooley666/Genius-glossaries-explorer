@@ -12,6 +12,7 @@ dist
 dist-ssr
 *.local
 genius_API_keys.txt
+vite.config*.
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
