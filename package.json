@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "publish": "surge --domain https://genius-explorer.surge.sh/ "
+    
   },
   "dependencies": {
     "react": "^18.2.0",
