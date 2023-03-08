@@ -1,16 +1,13 @@
 import { useSearchParams } from "react-router-dom";
 
-export function randomise(min, max) {
-  min = Math.ceil(min);
-  max = Math.floor(max);
-  return Math.floor(Math.random() * (max - min + 1) + min);
-}
-
-export function getRandPagesArray(per_page, availableAnnotations) {
+export function getRandPagesArray(
+  per_page: number,
+  availableAnnotations?: number
+) {
   if (!availableAnnotations) {
     const [queryParams, _] = useSearchParams();
 
-    availableAnnotations = queryParams.get("annCount");
+    availableAnnotations = Number(queryParams.get("annCount"));
   }
   const arrayLength = Math.ceil(availableAnnotations / per_page);
 

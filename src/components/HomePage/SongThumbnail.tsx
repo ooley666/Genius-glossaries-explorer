@@ -1,17 +1,29 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { useSongData } from "../../fetchFunctions/useSongData.js";
-import { makeQuizletSet } from "../../helpers/makeQuizletSet.js";
+import { useSongData } from "../../fetchFunctions/useSongData";
+import { makeQuizletSet } from "../../helpers/makeQuizletSet";
 
-const SongThumbnail = ({ songID, showPopup, isDisabled }) => {
+type SongThumbnailProps = {
+  songID: string;
+  showPopup: () => void;
+  isDisabled: boolean;
+};
+
+const SongThumbnail = ({
+  songID,
+  showPopup,
+  isDisabled,
+}: SongThumbnailProps) => {
   const [isReady, setReadyState] = useState(true);
-  const { data, isLoading } = useSongData(songID);
-  if (isLoading) return <p>Loading...</p>;
+
+  const songQuery = useSongData(songID);
+  if (songQuery.isLoading) return <p>Loading...</p>;
+  if (songQuery.isError) return <p>Error occurred</p>;
   const {
     id,
     title,
     stats: { accepted_annotations },
-  } = data.response.song;
+  } = songQuery.data.response.song;
   return (
     <div className="thumbnail">
       {" "}

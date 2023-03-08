@@ -8,7 +8,10 @@ import RefOrAnn from "./RefOrAnn";
 const RNApage = () => {
   const { id } = useParams();
   const [pageIndex, setPageIndex] = useState(0);
-  const { data, error, isLoading, isFetching } = useReferentData(pageIndex, id);
+  const { data, error, isLoading, isFetching } = useReferentData(
+    pageIndex,
+    id!
+  );
 
   return (
     <div className="rna-page">

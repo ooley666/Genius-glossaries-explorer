@@ -1,5 +1,5 @@
-import SongThumbnail from "./SongThumbnail.jsx";
-import { litGlossariesIDs, sportsGlossariesIDs } from "../../config.js";
+import SongThumbnail from "./SongThumbnail";
+import { litGlossariesIDs, sportsGlossariesIDs } from "../../config";
 import { useState } from "react";
 import { QzPopup } from "./QzPopup";
 const HomePage = () => {
@@ -22,7 +22,7 @@ const HomePage = () => {
       </div>
       <div className="container">
         <div className="litThumbnails">
-          {litGlossariesIDs.map((id, i) => {
+          {litGlossariesIDs.map((id) => {
             return (
               <SongThumbnail
                 key={id}
