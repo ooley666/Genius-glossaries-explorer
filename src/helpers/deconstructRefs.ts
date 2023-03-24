@@ -1,4 +1,4 @@
-export const deconstructRefs = (referentsArr) => {
+export const deconstructRefs = (referentsArr: Array<ReferentObj>) => {
   const RefAnnArray = referentsArr.map((ref) => {
     return {
       refBody: ref.fragment,
@@ -6,5 +6,6 @@ export const deconstructRefs = (referentsArr) => {
       rnaID: ref.id,
     };
   });
+
   return RefAnnArray;
 };

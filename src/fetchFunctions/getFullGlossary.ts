@@ -1,7 +1,10 @@
 import { getRandPagesArray } from "../helpers/randomisers";
 import { loadReferentsData } from "./useReferentData";
 
-export async function useFullList(glossaryID, availableAnnotations) {
+export async function useFullList(
+  glossaryID: string,
+  availableAnnotations: number
+) {
   const pagesArr = getRandPagesArray(50, availableAnnotations);
 
   const responses = await Promise.all(

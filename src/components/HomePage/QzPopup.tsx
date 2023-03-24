@@ -1,6 +1,12 @@
 import quizletSettings from "../../assets/quizletSettings.jpg";
 import quizletStudySet from "../../assets/quizletStudySet.jpg";
-export function QzPopup({ popupIsVisible, closePopup }) {
+
+type QzPopupProps = {
+  popupIsVisible: boolean;
+  closePopup: () => void;
+};
+
+export function QzPopup({ popupIsVisible, closePopup }: QzPopupProps) {
   return (
     <div className="popup-box" hidden={!popupIsVisible}>
       <div className="popup-instructions">
